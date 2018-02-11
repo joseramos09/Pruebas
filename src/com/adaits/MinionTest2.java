@@ -1,10 +1,7 @@
 package com.adaits;
 
 import org.junit.jupiter.api.*;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class minionTest2 {
 
@@ -29,8 +26,8 @@ class minionTest2 {
     }
 
     @Test
-    void probarSonIgualesIguales(){
-    
+    void probarSonIguales(){
+        assertSame(minion1,minion3);
     }
 
 
