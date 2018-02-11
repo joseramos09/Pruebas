@@ -75,6 +75,25 @@ class OperacionesTest {
         assertArrayEquals(numeros1,numeros2);
     }
 
+    @DisplayName("Ejemplo de Arrays 2")
+    @Test
+    void sumarTest10(){
+        Operaciones o = new Operaciones();
+        Operaciones o2 = new Operaciones();
+
+        Operaciones[] ops = new Operaciones[2];
+        Operaciones[] ops2 = new Operaciones[2];
+
+        ops[0] = o;
+        ops[1] = o2;
+
+        ops2[0] = o;
+        ops2[1] = o2;
+
+
+        assertArrayEquals(ops,ops2);
+    }
+
 
 
 

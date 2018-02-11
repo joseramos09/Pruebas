@@ -1,20 +1,20 @@
 package com.adaits;
 
-public class Persona {
+public class Minion {
 
     private String nombre;
-    private int edad;
+    private int crimenes;
 
-    public Persona(String nombre, int edad) {
+    public Minion(String nombre, int crimenes) {
         this.nombre = nombre;
-        this.edad = edad;
+        this.crimenes = crimenes;
     }
 
     @Override
     public String toString() {
-        return "Persona{" +
+        return "Minion{" +
                 "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
+                ", crimenes=" + crimenes +
                 '}';
     }
 
@@ -26,13 +26,14 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public boolean esMayorEdad(){
+    public boolean esUnVillano(){
         boolean esMayor = false;
 
-        if(this.edad >= 18){
+        if(this.crimenes >= 18){
             esMayor = true;
         }
 
         return esMayor;
     }
+
 }
