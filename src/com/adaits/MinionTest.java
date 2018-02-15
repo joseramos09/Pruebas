@@ -45,43 +45,43 @@ class MinionTest {
 
 
     @Test
-    void probarEsMayorEdad(){
+    void probarEsUnVillano(){
         assertTrue(minionProbar.esUnVillano());
     }
 
     @Test
-    void probarEsMayorEdad2(){
+    void probarEsUnVillano2(){
         assertFalse(minionProbar.esUnVillano());
     }
 
     @Test
-    void probarEsMayorEdad3(){
+    void probarEsUnVillano3(){
         assertTrue(minionProbar.esUnVillano());
     }
 
     @Test
-    void probarEsMayorEdad4(){
+    void probarEsUnVillano4(){
         assertFalse(minionProbar.esUnVillano());
     }
 
     @Test
-    void probarEsMayorEdad5(){
+    void probarEsUnVillano5(){
         assertFalse(minionProbar.esUnVillano());
     }
     @Test
-    void probarEsMayorEdad6(){
+    void probarEsUnVillano6(){
         assertTrue(minionProbar.esUnVillano());
     }
     @Test
-    void probarEsMayorEdad7(){
+    void probarEsUnVillano7(){
         assertTrue(minionProbar.esUnVillano());
     }
     @Test
-    void probarEsMayorEdad8(){
+    void probarEsUnVillano8(){
         assertFalse(minionProbar.esUnVillano());
     }
     @Test
-    void probarEsMayorEdad9(){
+    void probarEsUnVillano9(){
         assertTrue(minionProbar.esUnVillano());
     }
 
