@@ -4,6 +4,18 @@ public class Minion {
 
     private String nombre;
     private int crimenes;
+    private String palabra = "";
+    private int ojos =1;
+    private boolean gafas;
+
+
+    public Minion(String nombre, int crimenes, String palabra, int ojos, boolean gafas) {
+        this.nombre = nombre;
+        this.crimenes=crimenes;
+        this.palabra=palabra;
+        this.ojos=ojos;
+        this.gafas=gafas;
+    }
 
     //Crear propiedad para gestionar palabra favorita
     //Crear propiedad para los numeros de ojos
@@ -41,6 +53,24 @@ public class Minion {
         }
 
         return esMayor;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Minion minion = (Minion) o;
+
+        if (crimenes != minion.crimenes) return false;
+        return getNombre() != null ? getNombre().equals(minion.getNombre()) : minion.getNombre() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getNombre() != null ? getNombre().hashCode() : 0;
+        result = 31 * result + crimenes;
+        return result;
     }
 
     //Crear una funcion que obtengan todos los minions con mas de un ojo y sin gafas
